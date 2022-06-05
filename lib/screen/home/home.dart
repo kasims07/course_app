@@ -1,9 +1,9 @@
 import 'package:course_app/constant/colors.dart';
+
 import 'package:course_app/screen/home/widget/emoji_text.dart';
+import 'package:course_app/screen/home/widget/feature_course.dart';
 import 'package:course_app/screen/home/widget/search_input.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
-            children: [EmojoText(), SearchInpit()],
+            children: [EmojoText(), SearchInpit(), FeatureCourse()],
           ),
         ));
   }
